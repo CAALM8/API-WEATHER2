@@ -1,22 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Streamlit Weather App
-=====================
-
-This is a basic Streamlit webapp displaying the current temperature, wind speed
-and wind direction as well as the temperature and precipitation forecast for 
-the week ahead at one of 40,000+ cities and towns around the globe. The weather
-forecast is given in terms of the actual timezone of the city of interest.
-Additionally, a map with the location of the requested city is displayed.
-
-- The weather data is from http://open-meteo.com
-- The list with over 40,000 cities around world stems from 
-  https://simplemaps.com/data/world-cities
-
-Enjoy exploring!
-
-"""
-
 import streamlit as st
 import pandas as pd
 import requests
@@ -202,6 +183,7 @@ with st.spinner('Loading...'):
              'List of 40,000+ world cities: [https://simplemaps.com/data/world-cities](https://simplemaps.com/data/world-cities) \n\n' +
              'Github repository: [streamlit-weather-app](https://github.com/ndakov/streamlit-weather-app)')
     st.write('Thanks for stopping by. Cheers!')
+
 
 
 
